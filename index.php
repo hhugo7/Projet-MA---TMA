@@ -8,9 +8,13 @@
 </head>
 <body>
     <div class="principal">
-        <h1>Epsilon</h1>
-        <p>Plateforme de peer-learning Epsi Lille</p>
-        <a href="connexion.php">Upload your File !</a>
+        <div class="epsilon">
+            <h1>Epsilon</h1>
+            <p>Plateforme de peer-learning Epsi Lille</p>
+            <img src="hugo.jpg" alt="hugo travers" />
+            <p>Hugo Hochart</p>
+            <a href="forms.php">Upload your File !</a>
+        </div>
     </div>  
 </body>
 </html>
