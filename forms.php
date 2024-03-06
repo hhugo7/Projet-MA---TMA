@@ -2,7 +2,7 @@
     <p>
       <label for="monfichier">Sélectionnez un fichier : </label>
       <input type="file" name="monfichier" id="monfichier" />
-    </p>
+    </p>    
     <p>
       <input type="submit" value="Envoyer le fichier" />
     </p>
