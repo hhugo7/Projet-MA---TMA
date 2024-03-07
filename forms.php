@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -28,19 +29,36 @@
 
 <?php
 $dest = "upload/";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES['monfichier'])) {
-    if ($_FILES['monfichier']['error'] > 0) {
-        $erreur = "Erreur lors du transfert";
-    } else {
-        $resultat = move_uploaded_file($_FILES['monfichier']['tmp_name'], $dest . $_FILES['monfichier']['name']);
-        if ($resultat) {
-            echo "<p>Fichier téléchargé avec succès !</p>";
+    $filename = $_FILES['monfichier']['name'];
+    $fileExtension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+
+    // Liste des extensions autorisées
+    $allowedExtensions = array("pdf", "jpg", "jpeg", "png", "gif");
+
+    if (in_array($fileExtension, $allowedExtensions)) {
+        if ($_FILES['monfichier']['error'] === UPLOAD_ERR_OK) {
+            $resultat = move_uploaded_file($_FILES['monfichier']['tmp_name'], $dest . $filename);
+            if ($resultat) {
+                echo "<p>Fichier téléchargé avec succès !</p>";
+            } else {
+                echo "<p>Erreur lors du téléchargement du fichier.</p>";
+            }
         } else {
-            echo "<p>Erreur lors du téléchargement du fichier.</p>";
+            echo "<p>Erreur lors du transfert du fichier.</p>";
         }
+    } else {
+        echo "<p>Seuls les fichiers PDF, JPG, JPEG, PNG et GIF sont autorisés.</p>";
     }
 }
 ?>
+
+
+
+</body>
+</html>
+
 
 </body>
 </html>
