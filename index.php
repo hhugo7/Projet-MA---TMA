@@ -9,8 +9,9 @@
 <body>
     <div class="principal">
         <div class="epsilon">
-            <h1>Epsilon</h1>
-            <p>Plateforme de peer-learning Epsi Lille</p>
+            <header>
+                <?php include 'header.php'; ?>
+            </header>
             <img src="hugo.jpg" alt="hugo travers" />
             <p>Hugo Hochart</p>
             <p>Groupe : Hochart, Théo Duvel, Korentin </p>
