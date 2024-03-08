@@ -6,6 +6,7 @@ body{
 background: linear-gradient(0deg, rgb(205, 129, 235) 0%, rgb(233, 145, 239) 55%);
 background-attachment: fixed;
 background-size: cover;
+color:#ef3131;
 }
 
 .principal {
@@ -23,7 +24,6 @@ background-size: cover;
 
 .epsilon h1 {
     font-size: 41px;
-    color:#ef3131;
     margin: 0;
     padding: 0;
     font-family: fantasy;
@@ -32,8 +32,6 @@ background-size: cover;
 
 .epsilon p {
     font-size: 1.2rem;
-    color: #ef3131;
-    
 }
 
 .epsilon img{
