@@ -8,16 +8,21 @@
 </head>
 <body>
     <div class="principal">
+
         <div class="epsilon">
+
             <header>
                 <?php include 'header.php'; ?>
             </header>
+
             <img src="hugo.jpg" alt="hugo travers" />
             <p>Hugo Hochart</p>
             <p>Groupe : Hochart, Théo Duvel, Korentin </p>
             <a href="forms.php">Upload your File !</a>
             <p>Copyright © Epsi Lille 2024</p>
+
         </div>
+
     </div>  
 </body>
 </html>
