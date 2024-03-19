@@ -20,7 +20,7 @@
             <input type="submit" value="Envoyer le fichier" />
           </p>
       </form>
-      <a href="index.php">return</a>
+      <a href="index.php">return </a>
     </div>
   </div>
 </body>
