@@ -53,12 +53,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES['monfichier'])) {
     }
 }
 ?>
-
-
-
-</body>
-</html>
-
-
-</body>
-</html>
